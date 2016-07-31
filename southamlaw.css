@@ -230,7 +230,7 @@ body {
 		copy your FontName into code below and remove
 		comment brackets */
 
-	@font-face {
+	/*@font-face {
 	    font-family: 'Azuro';
 	    src: url('type/azuro-regular.eot');
 	    src: url('type/azuro-regular.eot?iefix') format('eot'),
@@ -264,4 +264,4 @@ body {
 	         url('type/azuro-bolditalic.woff') format('woff'),
 	         url('type/azuro-bolditalic.ttf') format('truetype');
 	    font-weight: bold;
-	    font-style: italic; }
+	    font-style: italic; }*/
