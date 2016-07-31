@@ -36,30 +36,55 @@ html,
 body {
   height: 100%;
   background-color: #384366;
+  padding-top: 70px;
 }
+
 body {
   font-family: Azuro, Helvetica, Arial, sans-serif;
   color: #fff;
-  text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  height: 100%;
 }
+
+.navbar {
+  width: 100%;
+  background-color: #384366;
+
+}
+
+.jumbotron {
+  background-color: inherit;
+}
+
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+  margin-bottom: 60px;
+}
+.blog-post-title {
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+.blog-post-meta {
+  margin-bottom: 20px;
+  color: #999;
+}
+
+
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
-  display: table;
+  /*display: table;*/
   width: 100%;
-  height: 100%; /* For at least Firefox */
   min-height: 100%;
-  -webkit-box-shadow: inset 0 0 50px rgba(0,0,0,.25);
-          box-shadow: inset 0 0 50px rgba(0,0,0,.25);
+  position: relative;
 }
-.site-wrapper-inner {
-  display: table-cell;
-  vertical-align: top;
-}
-.cover-container {
-  margin-right: auto;
-  margin-left: auto;
+.main-content {
+  padding:10px;
+  padding-bottom: 42px;
 }
 
 /* Padding for spacing */
@@ -71,12 +96,28 @@ body {
   padding-bottom: 5px;
 }
 
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: calc(100vh - 180px - 42px); /* 180 for the header/nav 42 for the footer   */
+  display: flex;
+  align-items: center;
+}
+
 /*
  * Header
  */
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
+  clear: both;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.masthead-nav {
+  clear: both;
+  text-align: center;
 }
 
 .masthead-nav > li {
@@ -108,9 +149,6 @@ body {
 }
 
 @media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
   .masthead-nav {
     float: center;
   }
@@ -133,11 +171,15 @@ body {
 /*
  * Footer
  */
-
 .mastfoot {
   color: #999; /* IE8 proofing */
   color: rgba(255,255,255,.5);
   font-size: 12px;
+  padding-top: 15px;
+  position: absolute;
+  height: 42px;
+  bottom:0;
+  text-align: center;
 }
 
 
@@ -152,8 +194,7 @@ body {
     top: 0;
   }
   .mastfoot {
-    position: fixed;
-    bottom: 0;
+    /*position: fixed;*/ /* removed to make the footer be on the bottom*/
   }
   /* Start the vertical centering */
   .site-wrapper-inner {
@@ -168,10 +209,13 @@ body {
 }
 
 @media (min-width: 992px) {
-  .masthead,
+  /*.masthead,
   .mastfoot,
-  .cover-container {
-    width: 700px;
+  .cover-container,*/
+  .masthead-brand {
+    vertical-align: middle;
+    width: 640px;
+    clear: both;
   }
 }
 
