@@ -133,6 +133,11 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
 }
 
+.rounded h1, h2, h3, h4, h5, h6 {
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+
 /*
  * Header
  */
