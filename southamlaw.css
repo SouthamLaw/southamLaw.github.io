@@ -102,7 +102,7 @@ body {
 }
 .main-content {
   padding:10px;
-  padding-bottom: 42px;
+  padding-bottom: 24px;
 }
 
 /* Padding for spacing */
@@ -116,7 +116,7 @@ body {
 
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: calc(100vh - 180px - 42px); /* 180 for the header/nav 42 for the footer   */
+  min-height: calc(100vh - 180px - 24px); /* 180 for the header/nav 42 for the footer   */
   display: flex;
   align-items: center;
 }
@@ -205,14 +205,17 @@ body {
   color: #999; /* IE8 proofing */
   color: rgba(255,255,255,.5);
   font-size: 12px;
-  padding-top: 15px;
+  padding-top: 5px;
   position: absolute;
-  height: 42px;
+  height: 24px;
   bottom:0;
   text-align: center;
   background-color: #384366;
 }
 
+.mastfoot p {
+  margin: 0;
+}
 
 /*
  * Affix and center
