@@ -56,6 +56,21 @@ body {
   background-color: inherit;
 }
 
+.big-text {
+  font-size: 20px;
+}
+
+.no-background-color {
+  background-color: transparent;
+}
+
+.full-image {
+    background: url('images/fromWilson.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
 
 /*
  * Blog posts
@@ -63,14 +78,17 @@ body {
 
 .blog-post {
   margin-bottom: 60px;
+  font-size: 16px;
 }
+
 .blog-post-title {
   margin-bottom: 5px;
-  font-size: 40px;
+  font-size: 32px;
 }
 .blog-post-meta {
   margin-bottom: 20px;
   color: #999;
+  font-size: 14px;
 }
 
 
@@ -101,6 +119,18 @@ body {
   min-height: calc(100vh - 180px - 42px); /* 180 for the header/nav 42 for the footer   */
   display: flex;
   align-items: center;
+}
+
+.rounded {
+  border-radius: 10px;
+  /* Fallback for web browsers that doesn't support RGBa */
+  background: rgb(144, 150, 170);
+  /* RGBa with 0.6 opacity */
+  background: rgba(144, 150, 170, 0.8);
+  /* For IE 5.5 - 7*/
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+  /* For IE 8*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
 }
 
 /*
@@ -180,6 +210,7 @@ body {
   height: 42px;
   bottom:0;
   text-align: center;
+  background-color: #384366;
 }
 
 
