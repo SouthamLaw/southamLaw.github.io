@@ -105,6 +105,25 @@ body {
   padding-bottom: 24px;
 }
 
+
+/* Margin for spacing */
+.margin-left {
+  margin-left: 15px;
+}
+
+.margin-bottom {
+  margin-bottom: 15px;
+}
+
+.margin-right {
+  margin-right: 15px;
+}
+
+.margin-top {
+  margin-top: 15px;
+}
+
+
 /* Padding for spacing */
 .inner {
   padding: 30px;
@@ -259,6 +278,16 @@ body {
 }
 
 
+.height-16em-limit {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .height-16em-limit {
+    max-height: 16em;
+    width: auto;
+  }
+}
 
 
 
